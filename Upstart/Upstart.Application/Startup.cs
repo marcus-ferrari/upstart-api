@@ -63,12 +63,6 @@ namespace Upstart.Application
                  options.AddPolicy("Localhost",
                      builder =>
                      {
-                         builder.WithOrigins("http://localhost:3000/");
-                     });
-
-                 options.AddPolicy("AnotherPolicy",
-                     builder =>
-                     {
                          builder.WithOrigins("http://localhost:3000/")
                                              .AllowAnyHeader()
                                              .AllowAnyMethod()

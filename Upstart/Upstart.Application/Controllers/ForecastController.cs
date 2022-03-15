@@ -11,7 +11,7 @@ namespace Upstart.Application.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
-    [EnableCors("AnotherPolicy")]
+    [EnableCors("Localhost")]
     public class ForecastController : Controller
     {
         private readonly IForecastService _forecastService;
